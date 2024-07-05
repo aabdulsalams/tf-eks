@@ -12,18 +12,19 @@ This repo contains:
 ### Steps
 
 ##### Setup Infrastructure
-1. Inside 'infrastructure' directory run these command:
-`terraform init` 
-`terrafrom plan`
-`terraform apply`
+1. Inside 'infrastructure' directory create terraform.tfvars file, you can copy it from terraform.tfvars.example
+2. Inside 'infrastructure' directory run these command:
+- `terraform init` 
+- `terrafrom plan`
+- `terraform apply`
 or you can run it with command `bash setup.sh` instead
 
 ##### Install Sample Application
 1. Inside 'applications/simple-app' directory run these command:
-`kubectl apply -f deployment.yaml`
-`kubectl apply -f service.yaml`
-`kubectl apply -f rbac.yaml`
-`kubectl apply -f ingress.yaml`
+- `kubectl apply -f deployment.yaml`
+- `kubectl apply -f service.yaml`
+- `kubectl apply -f rbac.yaml`
+- `kubectl apply -f ingress.yaml`
 or you can run it with command `bash setup.sh` instead
 
 2. Inside 'applications/canary-app' directory run these command:

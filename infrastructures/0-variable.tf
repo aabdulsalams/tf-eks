@@ -74,13 +74,7 @@ variable "max_capacity" {
   type        = number
 }
 
-
 variable "desired_capacity" {
   description = "The desired number of nodes."
   type        = number
-}
-
-variable "key_name" {
-  description = "The name of the SSH key pair."
-  type        = string
 }

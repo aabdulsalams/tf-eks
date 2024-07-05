@@ -1,0 +1,17 @@
+region              = "ap-southeast-3"
+vpc_module_version  = "5.8.1"
+vpc_name            = "aabdulsalams-vpc"
+vpc_cidr            = "10.0.0.0/16"
+availability_zones  = ["ap-southeast-3a", "ap-southeast-3b"]
+private_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+public_subnet_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
+
+eks_module_version  = "20.16.0"
+cluster_name        = "aabdulsalams-cluster"
+ami_type            = "AL2023_x86_64_STANDARD"
+cluster_version     = "1.29"
+instance_type       = ["t3.medium"]
+node_group_name     = "aabdulsalams-nodes"
+min_capacity        = 1
+max_capacity        = 3
+desired_capacity    = 2
